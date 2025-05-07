@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Bsports Activiteit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Jouw CSS begint hier */
+
+.bs-activity {
+  border-radius: calc(5px * 3);
+  background-color: #ffffff;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+}
+.bs-activity__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bs-activity__top {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(12, 12, 13, 0.8),
+      rgba(12, 12, 13, 0.3)
+    ),
+    var(--background-image);
+}
+.bs-activity__top__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: calc(8px * 4);
+  margin-top: calc(8px * 4);
+  margin-right: calc(8px * 2);
+  gap: calc(8px * 2);
+  color: white;
+}
+.bs-activity__top__content__title {
+  font-family: Helvetica, sans-serif, Roboto, Arial;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.375rem;
+  line-height: 1.167;
+}
+.bs-activity__top__content__time {
+  display: flex;
+  gap: calc(8px * 3);
+  font-family: Helvetica, sans-serif, Roboto, Arial;
+  font-style: normal;
+  font-weight: 500;
+}
+.bs-activity__top__content__time__day,
+.bs-activity__top__content__time__hour,
+.bs-activity__top__content__location,
+.bs-activity__top__content__status {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.bs-activity__top__content__location__address {
+  font-weight: 500;
+  text-align: left;
+}
+.bs-activity__bottom {
+  position: sticky;
+  bottom: 0;
+  background-color: #ffffff;
+  border-top: thin double #d4efcf;
+}
+.bs-activity__bottom__content {
+  margin-top: calc(8px * 4);
+  display: flex;
+  justify-content: flex-end;
+  margin-right: calc(8px * 4);
+  margin-bottom: calc(8px * 3);
+  gap: calc(8px * 3);
+  color: #d4efcf;
+}
+.bs-activity__bottom__content__closeButton {
+  border-radius: calc(5px * 10);
+  color: #d4efcf;
+  margin-right: calc(8px * 2);
+  padding: 8px calc(8px * 2);
+}
+.bs-activity__middle {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(8px * 5);
+  margin-left: calc(8px * 4);
+  margin-right: calc(8px * 4);
+  margin-bottom: calc(8px * 3);
+  gap: calc(8px * 4);
+  color: #000000;
+}
+.bs-activity__middle__top__description__title,
+.bs-activity__middle__coach__title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.bs-activity__middle__top__description__full,
+.bs-activity__middle__coach__description {
+  margin-top: calc(8px * 2);
+  font-family: Helvetica, sans-serif, Roboto, Arial;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  text-align: justify;
+  white-space: break-spaces;
+}
+.bs-activity__middle__coach {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  gap: 8px;
+}
+.bs-activity__middle__coach__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(8px * 2);
+}
+.bs-activity__middle__coach__main__personality {
+  display: flex;
+  align-items: center;
+  gap: calc(8px * 2);
+}
+.bs-activity__middle__coach__main__personality__avatar {
+  width: calc(8px * 6);
+  height: calc(8px * 6);
+  border-radius: 50%;
+}
+.bs-activity__middle__coach__main__personality__right__name {
+  font-family: Helvetica, sans-serif, Roboto, Arial;
+  font-style: normal;
+  font-size: 14px;
+}
+.bs-activity__middle__coach__main__personality__right__override {
+  font-family: Helvetica, sans-serif, Roboto, Arial;
+  font-style: normal;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Jouw CSS eindigt hier */
+  </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f9f9f9; display: flex; justify-content: center;">
+  <div class="bs-activity">
+    <div class="bs-activity__top">
+      <div class="bs-activity__top__content">
+        <div class="bs-activity__top__content__title">Bootcamp Training</div>
+        <div class="bs-activity__top__content__time">
+          <div class="bs-activity__top__content__time__day">Zaterdag</div>
+          <div class="bs-activity__top__content__time__hour">09:00 - 10:30</div>
+        </div>
+        <div class="bs-activity__top__content__location">
+          <div class="bs-activity__top__content__location__address">Parkstraat 12, Amsterdam</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bs-activity__middle">
+      <div class="bs-activity__middle__top__description">
+        <div class="bs-activity__middle__top__description__title">Beschrijving</div>
+        <div class="bs-activity__middle__top__description__full">
+          Kom lekker sporten in de buitenlucht met een ervaren coach. Voor alle niveaus!
+        </div>
+      </div>
+
+      <div class="bs-activity__middle__coach">
+        <div class="bs-activity__middle__coach__title">Coach</div>
+        <div class="bs-activity__middle__coach__main">
+          <div class="bs-activity__middle__coach__main__personality">
+            <img class="bs-activity__middle__coach__main__personality__avatar" src="https://via.placeholder.com/80" alt="Coach Avatar">
+            <div class="bs-activity__middle__coach__main__personality__right">
+              <div class="bs-activity__middle__coach__main__personality__right__name">Sanne Jansen</div>
+              <div class="bs-activity__middle__coach__main__personality__right__override">Personal Trainer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bs-activity__bottom">
+      <div class="bs-activity__bottom__content">
+        <button class="bs-activity__bottom__content__closeButton">Sluiten</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
